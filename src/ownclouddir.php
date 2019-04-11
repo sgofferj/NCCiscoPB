@@ -1,19 +1,14 @@
 <?php
   #############################################################################
-  #                                                                           #
   # ownclouddir.php V1.0 - 03.03.2014                                         #
-  #                                                                           #
   # Display a user's owncloud address book on Cisco 7940/60 IP phones         #
-  #                                                                           #
-  # (C) 2014 by Stefan Gofferje, License: GPLV2                               #
-  #                                                                           #
-  # http://stefan.gofferje.net - stefan(a)gofferje.net                        #
-  #                                                                           #
+  # (C) 2014 by Stefan Gofferje                                               #
+  # License: GPLV3                                                            #
   #############################################################################
 
 
   # -- Configuration -------------------------------------------------------------------
-  
+
   $db_hostname = "localhost";	#Database host where owncloud database sits
   $db_user = "user";		#Database user with permissions to read from database
   $db_password = "password";	#Database user's password
@@ -150,7 +145,7 @@
     print"</SoftKeyItem>\n";
     print "</CiscoIPPhoneDirectory>\n";
   }
-  
+
   mysql_close($link);
 
 ?>
